@@ -10,6 +10,20 @@
     }
 }
 
+//Function to create a series of HTML elements
+
+function createWainwrightsList() {
+    const wainwrightsList = document.getElementById('wainwrights-list');
+
+    allWainwrightsData.forEach(wainwright => {
+        const wainwrightItem = document.createElement('li');
+        wainwrightItem.textContent = `${wainwright.name} - Height: ${wainwright.height}m, Area: ${wainwright.area}`;
+        wainwrightsList.appendChild(wainwrightItem);
+    });
+}
+
+
+
 
 
 
